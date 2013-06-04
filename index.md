@@ -1,5 +1,5 @@
 ---
-title: 一见如故
+title: Statistics, R, Graphics and Fun
 layout: page
 ---
 
