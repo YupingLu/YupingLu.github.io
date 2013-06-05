@@ -25,4 +25,4 @@ Twitter: [YupingLu](https://twitter.com/YupingLu)
 
 *	2012.07.25 开始在[Openshift](https://openshift.redhat.com/)上写博客，并在Godaddy上注册现在的域名allanl.com
 
-*	2013.06.05 正式将博客搬到Github，博客模板作者为[Yihui Xie](http://yihui.name/),感谢
+*	2013.06.05 正式将博客搬到Github，博客模板作者为[Yihui Xie](http://yihui.name/)，感谢
