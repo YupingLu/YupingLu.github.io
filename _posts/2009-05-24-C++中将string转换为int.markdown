@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2009-05-24 09:13:00+00:00
 layout: post
-slug: c___will_string_converted_to_int_rpm
+slug: C++中将string转换为int
 title: C++中将string转换为int(转）
 wordpress_id: 79
 categories:
@@ -18,68 +18,68 @@ C语言库函数名: atoi
 原型: int atoi(const char *nptr);
 需要用到的头文件: #include <stdlib.h>
 程序例:
-1）
-#include <stdlib.h>
-#include <stdio.h>
-int main(void)
-{
-int n;
-char *str = "12345.67";
-n = atoi(str);
-printf("string = %s integer = %dn", str, n);
-return 0;
-}
-执行结果
-string = 12345.67 integer = 12345
-2）
-#include <stdlib.h>
-#include <stdio.h>
-int main()
-{
-char a[] = "-100" ;
-char b[] = "123" ;
-int c ;
-c = atoi( a ) + atoi( b ) ;
-printf("c = %dn", c) ;
-return 0;
-}
-执行结果
-
-c = 23
+	1）
+	#include <stdlib.h>
+	#include <stdio.h>
+	int main(void)
+	{
+		int n;
+		char *str = "12345.67";
+		n = atoi(str);
+		printf("string = %s integer = %dn", str, n);
+		return 0;
+	}
+	执行结果
+	string = 12345.67 integer = 12345
+	
+	2）
+	#include <stdlib.h>
+	#include <stdio.h>
+	int main()
+	{
+		char a[] = "-100" ;
+		char b[] = "123" ;
+		int c ;
+		c = atoi( a ) + atoi( b ) ;
+		printf("c = %dn", c) ;
+		return 0;
+	}
+	执行结果
+	c = 23
 
 我试过了,在C++中
 
 对于
 
-#include <iostream>
-#include <cstdlib>
-
-using namespace std;
-int main()
-{
-string a;
-a="12345";
-int c;
-c=atoi(a);
-return 0;
-}
+	#include <iostream>
+	#include <cstdlib>
+	
+	using namespace std;
+	int main()
+	{
+		string a;
+		a="12345";
+		int c;
+		c=atoi(a);
+		return 0;
+	}
 
 将会报错
 
 原因我也不太清楚。。。
 
-#include <iostream>
-#include <cstdlib>
-
-using namespace std;
-int main()
-{
-string a;
-a="12345";
-int c;
-c=atoi(a.c_str());
-return 0;
-}
+	#include <iostream>
+	#include <cstdlib>
+	
+	using namespace std;
+	int main()
+	{
+		string a;
+		a="12345";
+		int c;
+		c=atoi(a.c_str());
+		return 0;
+	}
 
 这样就可以了
 
@@ -91,38 +91,26 @@ c++语言提供了两种字符串实现，其中较原始的一种只是字符�
 
 标准头文件<cstring>包含操作c-串的函数库。这些库函数表达了我们希望使用的几乎每种字符串操作。 当调用库函数，客户程序提供的是string类型参数，而库函数内部实现用的是c-串，因此需要将string对象，转化为char*对象，而c_str()提供了这样一种方法，它返回一个客户程序可读不可改的指向字符数组的指针。 例：
 
-#include <iostream>
-
-#include <string>
-
-using namespace std;
-
-void main()
-
-{
-
-string add_to="hello!";
-
-//std::cout<<add_to<<endl;
-
-const string add_on="baby";
-
-const char*cfirst = add_to.c_str();
-
-const char*csecond = add_on.c_str();
-
-char*copy = new char[strlen(cfirst) + strlen(csecond) + 1];
-
-strcpy( copy, cfirst);
-
-std::cout<<copy<<endl;
-
-//strcat( copy, csecond);
-
-add_to = copy;
-
-delete [] copy;
-
-std::cout<<add_to<<std::endl;
-
-}
+	#include <iostream>
+	#include <string>
+	using namespace std;
+	
+	void main()
+	{
+		string add_to="hello!";
+		//std::cout<<add_to<<endl;
+		const string add_on="baby";
+		const char*cfirst = add_to.c_str();
+		const char*csecond = add_on.c_str();
+		char*copy = new char[strlen(cfirst) + strlen(csecond) + 1];
+		
+		strcpy( copy, cfirst);
+		std::cout<<copy<<endl;
+		
+		//strcat( copy, csecond);
+		
+		add_to = copy;
+		delete [] copy;
+		
+		std::cout<<add_to<<std::endl;
+	}
