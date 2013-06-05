@@ -4,13 +4,13 @@ title: About Me
 comments: yes
 ---
 
-Hi, My name is Allan Yuping Lu¡ºÂ½ÓêÆ½¡». [http://about.me/yupinglu](http://about.me/yupinglu)
+Hi, My name is Allan Yuping Luã€é™†é›¨å¹³ã€. [http://about.me/yupinglu](http://about.me/yupinglu)
 
 This is a blog of my own thoughts and learning experiences.
 
 I graduated from [Nanjing Agricultural University](http://english.njau.edu.cn/).
 
-My motto:×·Çó£¬ÈËÉúµÄÄ¿µÄ£¬ÓÀ²»Í£Ğª£¡ÈËÉú¾ÍÊÇÈ¥²»¶ÏµØ·¢ÏÖ£¡
+My motto:è¿½æ±‚ï¼Œäººç”Ÿçš„ç›®çš„ï¼Œæ°¸ä¸åœæ­‡ï¼äººç”Ÿå°±æ˜¯å»ä¸æ–­åœ°å‘ç°ï¼
 
 The place I grew up is __Taizhou__, China;  And now I live in __Nanjing__, China.
 
