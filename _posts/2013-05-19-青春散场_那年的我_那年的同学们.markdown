@@ -3,6 +3,7 @@ author: yupinglu
 comments: true
 date: 2013-05-19 11:26:32+00:00
 layout: post
+published: false
 slug: '青春散场：那年的我，那年的同学们'
 title: '青春散场：那年的我，那年的同学们'
 wordpress_id: 463
