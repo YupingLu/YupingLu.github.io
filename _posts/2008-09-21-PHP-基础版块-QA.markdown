@@ -1,0 +1,30 @@
+---
+author: yupinglu
+comments: true
+date: 2008-09-21 05:46:00+00:00
+layout: post
+slug: PHP基础版块Q&A
+title: PHP基础版块Q&A
+wordpress_id: 8
+categories:
+- PHP
+tags:
+- php
+---
+
+Q：如何预先获取auto_increment的值？_        
+([oujianhui](http://bbs.phpchina.com/thread-48376-1-71.html/))
+A：mysql_connect('localhost','root','root') or die('不能连接到服务器');_
+mysql_select_db('test');                      //连接数据库_
+$sql = "show create table hj_reset_password"; //hj_reset_password 为表名_
+$query = mysql_query($sql);_
+$arr = mysql_fetch_array($query);_
+$b = strstr($arr[1],'AUTO_INCREMENT=');       //获取子字符串,包含AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 )_
+$result = intval(substr($b,15));                 //substr()从字符串第16个位置获取字符串,再对获取后的字符串进行int类型转换_
+echo 'AUTO_INCREMENT的值' .$result;              //输出结果:即为下一次插入数据时的ID值
+
+Q： 服务器时区默认设置不符合要求，而且又不能去改服务器的php.ini怎么办？_
+A： 在需要时区操作的时候利用函数 **date_default_timezone_set** 设定您需要时区。
+
+Q： PHP中单引号，双引号，反引号的区别不太清楚，能解释一下么？_
+A： PHP单引号(')，双引号("")反引号(`)都能引用字串。单引号中变量不被转义，双引号转义变量，而反引号中变量转义作为shell命令被执行。
