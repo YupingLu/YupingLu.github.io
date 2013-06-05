@@ -12,7 +12,7 @@ tags:
 - Assembly
 ---
 
-MOV（MOVe）   传送指令
+MOV（MOVe）   传送指令 -
 PUSH     入栈指令
 POP     出栈指令
 XCHG（eXCHanG）   交换指令
