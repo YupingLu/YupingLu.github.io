@@ -21,6 +21,6 @@ tags: [github, Jekyll, Markdown]
 
 4.	我的博客使用的是[Yihui Xie](http://yihui.name/)的模板，再次表示感谢.
 
-5.	最后可以添加个人域名，比如[我的域名](http://allal.com).
+5.	最后可以添加个人域名，比如[我的域名](http://allanl.com).
 
 You see it's easy :}
