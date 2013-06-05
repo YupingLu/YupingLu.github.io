@@ -3,6 +3,7 @@ author: yupinglu
 comments: true
 date: 2009-03-22 06:23:00+00:00
 layout: post
+published: false
 slug: join_the_party_date
 title: 入党日
 wordpress_id: 68
