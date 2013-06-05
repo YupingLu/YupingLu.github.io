@@ -1,0 +1,31 @@
+---
+author: yupinglu
+comments: true
+date: 2011-03-06 11:14:21+00:00
+layout: post
+slug: qr-code
+title: QR Code
+wordpress_id: 76
+categories:
+- IT
+tags:
+- QR code
+---
+
+A **QR** Code is a specific matrix barcode (or two-dimensional code), readable by dedicated QR barcode readers and camera phones. The code consists of black modules arranged in a square pattern on a white background. The information encoded can be text, URL or other data.
+
+Common in Japan, where it was created by Toyota subsidiary Denso-Wave in 1994, the QR code is one of the most popular types of two-dimensional barcodes. QR is the abbreviation for Quick Response, as the creator intended the code to allow its contents to be decoded at high speed.
+
+![](http://farm9.staticflickr.com/8486/8186885589_2517e6b6a1_b.jpg)
+
+
+
+More on wikipedia  [http://en.wikipedia.org/wiki/QR_Code](http://en.wikipedia.org/wiki/QR_Code)
+
+![qrcode](http://qrcode.kaywa.com/img.php?s=8&d=http%3A%2F%2F4sqwiki.com)
+
+That is my blog's QR code.
+
+A free online QR code generator [http://qrcode.kaywa.com/](http://qrcode.kaywa.com/)
+
+Google Chart Tool: [http://code.google.com/apis/chart/docs/gallery/qr_codes.html](http://code.google.com/apis/chart/docs/gallery/qr_codes.html)

@@ -1,0 +1,188 @@
+---
+author: yupinglu
+comments: true
+date: 2011-03-03 05:30:02+00:00
+layout: post
+slug: yii%e8%af%bb%e4%b9%a6%e7%ac%94%e8%ae%b0
+title: Yii读书笔记
+wordpress_id: 62
+categories:
+- PHP
+tags:
+- php
+- Yii
+---
+
+1. 在用Yii时，发现很多比较运算符都是"==="，而非"=="。查了php手册，原来是这么回事：
+
+
+
+
+
+
+
+
+$a == $b
+
+
+Equal
+
+
+**`TRUE`** if $a is equal to $b after type juggling.
+
+
+
+
+
+
+$a === $b
+
+
+Identical
+
+
+**`TRUE`** if $a is equal to $b, and they are of the same type.
+
+
+
+
+
+
+$a != $b
+
+
+Not equal
+
+
+**`TRUE`** if $a is not equal to $b after type juggling.
+
+
+
+
+
+
+$a <> $b
+
+
+Not equal
+
+
+**`TRUE`** if $a is not equal to $b after type juggling.
+
+
+
+
+
+
+$a !== $b
+
+
+Not identical
+
+
+**`TRUE`** if $a is not equal to $b, or they are not of the same type.
+
+
+
+
+
+
+$a < $b
+
+
+Less than
+
+
+**`TRUE`** if $a is strictly less than $b.
+
+
+
+
+
+
+$a > $b
+
+
+Greater than
+
+
+**`TRUE`** if $a is strictly greater than $b.
+
+
+
+
+
+
+$a <= $b
+
+
+Less than or equal to
+
+
+**`TRUE`** if $a is less than or equal to $b.
+
+
+
+
+
+
+$a >= $b
+
+
+Greater than or equal to
+
+
+**`TRUE`** if $a is greater than or equal to $b.
+
+
+
+
+2. 关于Heredoc的问题。
+
+return <<<EOD
+USAGE
+rbac
+DESCRIPTION
+This command generates an initial RBAC authorization hierarchy.
+EOD;
+
+今天在敲这段代码的时候，加了indentation，原来不能加，记住。
+
+3. Lazy Loading & Eager Loading.
+
+When we first create the project instance, the query does not return all of the associated issues. It only retrieves the associated issues upon an initial, explicit request for them, that is, when $project->issues is executed. This is referred to as **lazy** because it waits to load the issues.
+
+However, in other circumstances, this approach can be somewhat inefficient. For example, if we wanted to retrieve the issue information across **N** projects, then using this lazy approach would involve executing **N** join queries. Depending on how large **N** is, this could be very inefficient. In these situations, we have another option. We can use what is called **Eager Loading**.
+
+Since we have altered the issues detail view to display our comments, including the author of the comment, we know it will be more efficient to use the Eager Loading. And the Source Code is:
+
+
+> $model = Issue::model()->with(array(
+'comments' => array('with'=>'author')))->findByPk($id);
+
+
+4. '//layouts/column1' & '/layouts/column1'
+
+I have noticed a variable " public $layout='//layouts/column1'; " in the Controller Class. And also clumn1.php contains a similar one. When I want to custom my module theme in AdminModule's init() function:
+
+
+> $this->layout = 'admin';
+
+
+It fails, however when I change colum1.php to "<?php $this->beginContent('/layouts/main'); ?>", it works.
+
+So Why?
+
+
+> 
+
+> 
+> 
+	
+>   * absolute view within a module: the view name starts with a single slash '/'. In this case, the view will be searched for under the currently active module's view path. If there is no active module, the view will be searched for under the application's view path.
+> 
+	
+>   * absolute view within the application: the view name starts with double slashes '//'. In this case, the view will be searched for under the application's view path. This syntax has been available since version 1.1.3.
+> 
+
+
