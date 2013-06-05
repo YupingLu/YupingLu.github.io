@@ -26,37 +26,37 @@ php substr中文乱码最有效到解决办法(2009-07-29 12:29:38) 标签：[ph
 
 substr()函数可以分割文字，但要分割的文字如果包括中文字符往往会遇到问题，这时可以用mb_substr()/mb_strcut这个函 数，mb_substr()/mb_strcut的用法与substr()相似，只是在mb_substr()/mb_strcut最后要加入多一个参 数，以设定字符串的编码，但是一般的服务器都没打开php_mbstring.dll，需要在php.ini在把php_mbstring.dll打开。
 举个例子：
-<?php
-echo mb_substr('这样一来我的字符串就不会有乱码^_^', 0, 7, 'utf-8');
-?>
-输出：这样一来我的字
-<?php
-echo mb_strcut('这样一来我的字符串就不会有乱码^_^', 0, 7, 'utf-8');
-?>
-输出：这样一
+	<?php
+		echo mb_substr('这样一来我的字符串就不会有乱码^_^', 0, 7, 'utf-8');
+	?>
+	输出：这样一来我的字
+	<?php
+		echo mb_strcut('这样一来我的字符串就不会有乱码^_^', 0, 7, 'utf-8');
+	?>
+	输出：这样一
 从上面的例子可以看出，mb_substr是按字来切分字符，而mb_strcut是按字节来切分字符，但是都不会产生半个字符的现象。
 
 =============================
 
 PHP实现中文字串截取无乱码的方法
 
-function GBsubstr($string, $start, $length) {
-if(strlen($string)>$length){
-$str=null;
-$len=$start+$length;
-for($i=$start;$i<$len;$i++){
-if(ord(substr($string,$i,1))>0xa0){
-$str.=substr($string,$i,2);
-$i++;
-}else{
-$str.=substr($string,$i,1);
-}
-}
-return $str.'...';
-}else{
-return $string;
-}
-}
+	function GBsubstr($string, $start, $length) {
+		if(strlen($string)>$length){
+			$str=null;
+			$len=$start+$length;
+			for($i=$start;$i<$len;$i++){
+				if(ord(substr($string,$i,1))>0xa0){
+					$str.=substr($string,$i,2);
+					$i++;
+				}else{
+					$str.=substr($string,$i,1);
+				}
+			}
+			return $str.'...';
+		}else{
+			return $string;
+		}
+	}
 
 ==========================================================
 
