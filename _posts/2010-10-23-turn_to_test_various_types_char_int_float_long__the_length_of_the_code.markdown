@@ -10,37 +10,36 @@ categories:
 - IT
 ---
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-typedef struct employee_st {
-char name[40];
-int id;
-} Employee;
-
-int main()
-{
-int myInt;
-Employee john;
-
-printf("Size of int is %dn",sizeof(myInt));
-/* The argument of sizeof is an object */
-printf("Size of int is %dn",sizeof(int));
-/* The argument of sizeof is a data type */
-
-printf("Size of Employee is %dn",sizeof(Employee));
-/* The argument of sizeof is a data type */
-printf("Size of john is %dn",sizeof(john));
-/* The argument of sizeof is an object */
-
-printf("Size of char is %dn",sizeof(char));
-printf("Size of short is %dn",sizeof(short));
-printf("Size of int is %dn",sizeof(int));
-printf("Size of long is %dn",sizeof(long));
-printf("Size of float is %dn",sizeof(float));
-printf("Size of double is %dn",sizeof(double));
-
-return 0;
-
-}
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	
+	typedef struct employee_st {
+		char name[40];
+		int id;
+	} Employee;
+	
+	int main()
+	{
+		int myInt;
+		Employee john;
+		
+		printf("Size of int is %dn",sizeof(myInt));
+		/* The argument of sizeof is an object */
+		printf("Size of int is %dn",sizeof(int));
+		/* The argument of sizeof is a data type */
+		
+		printf("Size of Employee is %dn",sizeof(Employee));
+		/* The argument of sizeof is a data type */
+		printf("Size of john is %dn",sizeof(john));
+		/* The argument of sizeof is an object */
+		
+		printf("Size of char is %dn",sizeof(char));
+		printf("Size of short is %dn",sizeof(short));
+		printf("Size of int is %dn",sizeof(int));
+		printf("Size of long is %dn",sizeof(long));
+		printf("Size of float is %dn",sizeof(float));
+		printf("Size of double is %dn",sizeof(double));
+		
+		return 0;
+	}
