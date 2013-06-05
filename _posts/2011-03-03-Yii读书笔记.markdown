@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2011-03-03 05:30:02+00:00
 layout: post
-slug: yii%e8%af%bb%e4%b9%a6%e7%ac%94%e8%ae%b0
+slug: Yii读书笔记
 title: Yii读书笔记
 wordpress_id: 62
 categories:

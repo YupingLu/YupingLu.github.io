@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2012-08-25 06:56:58+00:00
 layout: post
-slug: the-meaning-of-life-%e7%94%9f%e5%91%bd%e7%9a%84%e6%84%8f%e4%b9%89
+slug: the-meaning-of-life-生命的意义
 title: The meaning of life.生命的意义
 wordpress_id: 115
 categories:

@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2011-02-26 09:07:15+00:00
 layout: post
-slug: python%e7%ac%94%e8%ae%b0
+slug: Python笔记
 title: Python笔记
 wordpress_id: 58
 categories:

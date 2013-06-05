@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2011-02-20 12:06:08+00:00
 layout: post
-slug: '%e7%ba%aa%e5%bf%b5%e5%a4%a7%e5%ad%a6%e6%9c%80%e5%90%8e%e7%9a%84%e5%af%92%e5%81%87'
+slug: '纪念大学最后的寒假'
 title: 纪念大学最后的寒假
 wordpress_id: 45
 categories:

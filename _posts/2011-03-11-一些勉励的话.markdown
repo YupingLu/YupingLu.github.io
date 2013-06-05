@@ -3,7 +3,7 @@ author: yupinglu
 comments: true
 date: 2011-03-11 00:52:59+00:00
 layout: post
-slug: '%e4%b8%80%e4%ba%9b%e5%8b%89%e5%8a%b1%e7%9a%84%e8%af%9d'
+slug: '一些勉励的话'
 title: 一些勉励的话
 wordpress_id: 86
 categories:
