@@ -23,4 +23,6 @@ tags: [github, Jekyll, Markdown]
 
 5.	最后可以添加个人域名，比如[我的域名](http://allanl.com).
 
+6.	PS：如果选择Disqus后，迁移过来的评论URL不对，可以参照这个[网址](http://joejoomla.com/sound-off/167-what-to-do-when-your-disqus-comments-link-to-the-wrong-url.html).
+
 You see it's easy :}
