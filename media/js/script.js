@@ -26,19 +26,26 @@ function parseDate(str) {
 }
  
 function loadLatestTweet(numTweets, un){
-    var _url = 'https://api.twitter.com/1/statuses/user_timeline/' + un + '.json?callback=?&count='+numTweets+'&include_rts=1';
-    $.getJSON(_url,function(data){
-    for(var i = 0; i< data.length; i++){
-            var tweet = data[i].text;
-            var created = parseDate(data[i].created_at);
-            var createdDate = created.getDate()+'-'+(created.getMonth()+1)+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
-            //Uncomment below line to see the user Image
-			//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
-			tweet = tweet.parseURL().parseUsername().parseHashtag();
-            //Uncomment below line to displ tweet date.
-			tweet += ' '+createdDate;
-            $("#twitter-feed").append('<p>'+(i+1)+' '+tweet+'</p>');
-        }
-    if(data.length==0){$("#twitter-feed").append('<p>你在墙内</p>');}
-    });
+
+	$.ajax({
+    url: 'https://api.twitter.com/1/statuses/user_timeline/' + un + '.json?callback=?&count='+numTweets+'&include_rts=1',
+    dataType: 'json',
+    success: function( data ) {
+      for(var i = 0; i< data.length; i++){
+		    var tweet = data[i].text;
+		    var created = parseDate(data[i].created_at);
+		    var createdDate = created.getDate()+'-'+(created.getMonth()+1)+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
+		    //Uncomment below line to see the user Image
+				//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
+				tweet = tweet.parseURL().parseUsername().parseHashtag();
+		    //Uncomment below line to displ tweet date.
+				tweet += ' '+createdDate;
+		    $("#twitter-feed").append('<p>'+(i+1)+' '+tweet+'</p>');
+		  }
+    },
+    error: function( data ) {
+      $("#twitter-feed").append('<p>Sorry, you are blocked!~</p>');
+    }
+  });	
+
 }
