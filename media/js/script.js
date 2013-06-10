@@ -33,13 +33,21 @@ function loadLatestTweet(numTweets, un){
       for(var i = 0; i< data.length; i++){
 		    var tweet = data[i].text;
 		    var created = parseDate(data[i].created_at);
-		    var createdDate = (created.getMonth()+1)+'-'+created.getDate()+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
+		    
+		    var postdate = created.getFullYear()+'-'+(created.getMonth()+1)+'-'+created.getDate()
+		    +' at '+created.getHours()+':'+created.getMinutes();
+		    
 		    //Uncomment below line to see the user Image
 				//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
 				tweet = tweet.parseURL().parseUsername().parseHashtag();
 		    //Uncomment below line to displ tweet date.
-				tweet += ' '+createdDate;
-		    $("#twitter-feed").append('<p>'+(i+1)+' '+tweet+'</p>');
+	
+		    $("#twitter-feed").append(
+		    	'<li class=\"listing-item\">'+
+				    '<time datetime=\"postdate\">'+ postdate +'</time>'+
+				    tweet + 
+				  '</li>'
+		    );
 		  }
     },
     error: function( data ) {
