@@ -33,7 +33,7 @@ function loadLatestTweet(numTweets, un){
       for(var i = 0; i< data.length; i++){
 		    var tweet = data[i].text;
 		    var created = parseDate(data[i].created_at);
-		    var createdDate = created.getDate()+'-'+(created.getMonth()+1)+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
+		    var createdDate = (created.getMonth()+1)+'-'+created.getDate()+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
 		    //Uncomment below line to see the user Image
 				//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
 				tweet = tweet.parseURL().parseUsername().parseHashtag();
