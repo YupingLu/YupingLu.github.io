@@ -36,8 +36,8 @@ function loadLatestTweet(numTweets, un){
 			//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
 			tweet = tweet.parseURL().parseUsername().parseHashtag();
             //Uncomment below line to displ tweet date.
-			tweet += '<p class="tweettime">'+createdDate+'</p>'
-            $("#twitter-feed").append('<p>'+i+1+'   '+tweet+'</p>');
+			tweet += createdDate
+            $("#twitter-feed").append('<p>'+(i+1)+' '+tweet+'</p>');
         }
     });
 }
