@@ -1,5 +1,5 @@
 	$(document).ready(function() {
-    loadLatestTweet(10, "YupingLu");
+    loadLatestTweet(18, "YupingLu");
 });
  
 //Twitter Parsers
@@ -34,9 +34,10 @@ function loadLatestTweet(numTweets, un){
             var createdDate = created.getDate()+'-'+(created.getMonth()+1)+'-'+created.getFullYear()+' at '+created.getHours()+':'+created.getMinutes();
             //Uncomment below line to see the user Image
 			//tweet = "<img src='"+data[i].user.profile_image_url+"' />";
-			tweet = tweet.parseURL().parseUsername().parseHashtag();
+			tweet = i+' ';
+			tweet += tweet.parseURL().parseUsername().parseHashtag();
             //Uncomment below line to displ tweet date.
-			//tweet += '<div class="tweeter-info"><p class="right">'+createdDate+'</p></div>'
+			tweet += '<div class="tweeter-info"><p class="right">'+createdDate+'</p></div>'
             $("#twitter-feed").append('<p>'+tweet+'</p>');
         }
     });
