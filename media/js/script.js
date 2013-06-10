@@ -43,9 +43,9 @@ function loadLatestTweet(numTweets, un){
 		    //Uncomment below line to displ tweet date.
 	
 		    $("#twitter-feed").append(
-		    	'<li class=\"listing-item\">'+
+		    	'<li class=\"listing-item1\">'+
 				    '<time datetime=\"postdate\">'+ postdate +'</time>'+
-				    tweet + 
+				  	'<span>'+ tweet +'</span'>+
 				  '</li>'
 		    );
 		  }
