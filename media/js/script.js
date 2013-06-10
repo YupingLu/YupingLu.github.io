@@ -1,4 +1,4 @@
-	$(document).ready(function() {
+$(document).ready(function() {
     loadLatestTweet(18, "YupingLu");
 });
  
@@ -29,7 +29,6 @@ function loadLatestTweet(numTweets, un){
 	$.ajax({
     url: 'https://api.twitter.com/1/statuses/user_timeline/' + un + '.json?callback=?&count='+numTweets+'&include_rts=1',
     dataType: 'json',
-    timeout: 10000,
     success: function( data ) {
       for(var i = 0; i< data.length; i++){
 		    var tweet = data[i].text;
