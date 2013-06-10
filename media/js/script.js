@@ -45,7 +45,7 @@ function loadLatestTweet(numTweets, un){
 		    $("#twitter-feed").append(
 		    	'<li class=\"listing-item1\">'+
 				    '<time datetime=\"postdate\">'+ postdate +'</time>'+
-				  	'<span>'+ tweet +'</span'>+
+				  	'<span>'+ tweet +'</span>'+
 				  '</li>'
 		    );
 		  }
