@@ -39,5 +39,6 @@ function loadLatestTweet(numTweets, un){
 			tweet += ' '+createdDate;
             $("#twitter-feed").append('<p>'+(i+1)+' '+tweet+'</p>');
         }
+    if(data.length==0){$("#twitter-feed").append('<p>你在墙内</p>');}
     });
 }
