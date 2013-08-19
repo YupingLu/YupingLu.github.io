@@ -12,8 +12,8 @@ I was born in __Taizhou__, China; I lived in __Nanjing__, China for six years 20
 
 I graduated from [Nanjing Agricultural University](http://english.njau.edu.cn/), 2007-2011.
 
-Now I am a PhD student at a PhD student in the Department of Electrical Engineering and 
-Computer Science at the University of Tennessee. My advisor is [Dr. Michael A. Langston](http://web.eecs.utk.edu/~langston/).
+Now I am a PhD student in the Department of Electrical Engineering and Computer Science 
+at the University of Tennessee. My advisor is [Dr. Michael A. Langston](http://web.eecs.utk.edu/~langston/).
 
 My motto:追求，人生的目的，永不停歇！人生就是去不断地发现！
 
