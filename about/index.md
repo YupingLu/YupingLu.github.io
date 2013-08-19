@@ -8,11 +8,14 @@ Hi, I am Allan Yuping Lu『陆雨平』. [http://about.me/yupinglu](http://about
 
 This is a blog of my own thoughts and learning experiences.
 
+I was born in __Taizhou__, China; I lived in __Nanjing__, China for six years 2007-2013.
+
 I graduated from [Nanjing Agricultural University](http://english.njau.edu.cn/), 2007-2011.
 
-My motto:追求，人生的目的，永不停歇！人生就是去不断地发现！
+Now I am a PhD student at a PhD student in the Department of Electrical Engineering and 
+Computer Science at the University of Tennessee. My advisor is [Dr. Michael A. Langston](http://web.eecs.utk.edu/~langston/).
 
-I was born in __Taizhou__, China; I lived in __Nanjing__, China for six years 2007-2013.
+My motto:追求，人生的目的，永不停歇！人生就是去不断地发现！
 
 My email: YupingLu@outlook.com ;)  feel free to contact me!
 
