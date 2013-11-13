@@ -1,19 +1,16 @@
 ---
 layout: post
-title: The Dance
+title: GARTH BROOKS - The Dance
 categories: [about me]
 tags: [EmailFuture, Dream]
 ---
 
 <iframe width="560" height="420" src="http://www.youtube.com/embed/k7FRbeaXjvk" frameborder="0"> </iframe>
 
-Looking back on the memory of 
-
-The dance we shared beneath the stars above 
-
-For a moment all the world was right 
-
-How could I have known you'd ever say goodbye 
+>Looking back on the memory of 
+>The dance we shared beneath the stars above 
+>For a moment all the world was right 
+>How could I have known you'd ever say goodbye 
 
 And now I'm glad I didn't know 
 
