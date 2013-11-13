@@ -5,7 +5,7 @@ categories: [about me]
 tags: [EmailFuture, Dream]
 ---
 
-<iframe width="480" height="360" src="http://www.youtube.com/embed/WO82PoAczTc" frameborder="0"> </iframe>
+<iframe src="http://www.youtube.com/embed/WO82PoAczTc" frameborder="0"> </iframe>
 
 >	2年前，你申请失利，面对工作，你彷徨和不安，对于未来，有诸多不确定性。但我知道，你仍有梦想，你不想放弃。现在你开始托福和GRE了吗，你还在继续为理想奋斗还是你已经选择了放弃。我知道你不会的，因为那是你一生的理想。加油，你行的！
 
