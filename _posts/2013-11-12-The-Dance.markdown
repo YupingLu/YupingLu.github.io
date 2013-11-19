@@ -1,8 +1,8 @@
 ---
 layout: post
 title: GARTH BROOKS - The Dance
-categories: [about me]
-tags: [EmailFuture, Dream]
+categories: [life]
+tags: [Love]
 ---
 
 <iframe width="560" height="420" src="http://www.youtube.com/embed/k7FRbeaXjvk" frameborder="0"> </iframe>
