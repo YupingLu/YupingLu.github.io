@@ -1,5 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 permalink: /:year/:month/:title/
 author: Allan
 pygments: true
-
