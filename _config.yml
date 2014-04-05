@@ -1,4 +1,3 @@
-markdown: rdiscount
-permalink: /:year/:month/:title
+markdown: redcarpet
 author: Allan
 pygments: true
