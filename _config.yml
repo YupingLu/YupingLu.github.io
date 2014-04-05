@@ -1,21 +1,11 @@
-# Dependencies
-markdown:         redcarpet
+pygments: true
+markdown: redcarpet
 redcarpet:
-  extensions: ["tables"]
-
-pygments:         true
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            Allan
-tagline:          'Data Science, Apache Pig, Hadoop, Blogging, Tweets, Astrophysics'
-url:              http://allanl.com
-shorturl:         allanl.com
-
-author:
-  name:           'Allan'
-  url:            https://twitter.com/YupingLu
-
-paginate:         1
+  extensions:
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+    - fenced_code_blocks
+permalink: /:year/:month/:title/
+author: Allan
