@@ -1,14 +1,8 @@
 ﻿---
-author: yupinglu
-comments: true
-date: 2014-05-16
 layout: post
-slug: ORNL
 title: A visit to ORNL
-categories:
-- Life
-tags:
-- ORNL
+categories: [life]
+tags: [ORNL]
 ---
 
 
@@ -20,9 +14,11 @@ I have been Knoxville for nearly a year. Finally, I have a chance to visit Oak R
 ![](https://farm3.staticflickr.com/2934/14015703669_239acd382a_c.jpg)
 
 - If you are foreigners and work in ORNL, your country flag will be put on the wall.
+
 ![](https://farm3.staticflickr.com/2935/14015704439_751e2c3224_c.jpg)
 
 - A thank letter from the Japanese.
+
 ![](https://farm3.staticflickr.com/2932/14199088411_1e021a1598_c.jpg)
 
 - Our tour guide Bobby gave us a detail introdution of NICS. ORNL is the home of many supercomputers in the world.
