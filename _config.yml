@@ -1,11 +1,1 @@
-pygments: true
 markdown: kramdown
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - fenced_code_blocks
-permalink: /:year/:month/:title/
-author: Allan
