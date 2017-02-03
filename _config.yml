@@ -1,5 +1,5 @@
 pygments: true
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions:
     - hard_wrap
