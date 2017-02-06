@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2016 : A year in review
+title: 2016 A year in review
 categories: [life]
 tags: [人生]
 ---
