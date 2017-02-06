@@ -17,8 +17,13 @@ My email: YupingLu@outlook.com ;)  feel free to contact me!
 Twitter: [YupingLu](https://twitter.com/YupingLu)
 
 ###博客纪事###
--   2008.09.12 在百度空间写下第一篇博客
--   2011.02.10 将博客迁移到了Wordpress，并在上面注册域名4sqwiki.com
--   2012.07.25 开始在[Openshift](https://openshift.redhat.com/)上写博客，并在Godaddy上注册域名allanl.com
--   2013.06.05 将博客搬到Github，博客模板作者为[Yihui Xie](http://yihui.name/)，感谢
--   2017.02.01 注册域名yupinglu.me
+
+1、2008.09.12 在百度空间写下第一篇博客
+
+2、2011.02.10 将博客迁移到了Wordpress，并在上面注册域名4sqwiki.com
+
+3、2012.07.25 开始在[Openshift](https://openshift.redhat.com/)上写博客，并在Godaddy上注册域名allanl.com
+
+4、2013.06.05 将博客搬到Github，博客模板作者为[Yihui Xie](http://yihui.name/)，感谢
+
+5、2017.02.01 注册域名yupinglu.me
