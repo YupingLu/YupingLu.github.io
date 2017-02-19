@@ -10,4 +10,4 @@ tags: [Love]
 
 However life is not like what you have expected it to be. I didn't get it just like my job hunting failaure. Sometimes I started to doubt the meaning of life. Why on earth I work so hard to get nothing in my life. No paper, no lover, no job. Nothing! I feel like a total failure, a joke.
 
-I know God has a purpose for all of us. No one's path is the same. You have to walk on your way with courage and perseverance. But it's the feeling of loneiness which is killing me. Rather than searching, I'm still waiting for that person to my life. Where are you, my Valentine?
+I know God has a purpose for all of us. No one's path is the same. You have to walk on your way with courage and perseverance. But it's the feeling of loneiness which is killing me. I'm still waiting rather than searching for that person to my life. Where are you, my Valentine?
