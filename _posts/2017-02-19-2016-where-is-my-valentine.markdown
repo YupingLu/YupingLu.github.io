@@ -20,7 +20,7 @@ Below is a snapshot of my Chinese New Year visit this year.
 
 ![2](https://c1.staticflickr.com/3/2487/32154670484_93820aa8a5_k.jpg)
 
-![3](https://c1.staticflickr.com/3/2198/32184144383_a40098b8ed_o.jpg)
+![3](https://c1.staticflickr.com/3/2198/32184144383_0d508b9ee5_k.jpg)
 
 ![4](https://c1.staticflickr.com/1/636/32184144143_636e5c33d3_o.jpg)
 
@@ -28,6 +28,6 @@ Below is a snapshot of my Chinese New Year visit this year.
 
 ![6](https://c1.staticflickr.com/4/3925/32184144073_233dcf8e08_o.jpg)
 
-![7](https://c1.staticflickr.com/3/2008/32154670144_b8f6e59de5_o.jpg)
+![7](https://c1.staticflickr.com/3/2008/32154670144_ee3769b3ce_k.jpg)
 
 ![8](https://c1.staticflickr.com/4/3842/32184144013_6b2a2bdeee_o.jpg)
