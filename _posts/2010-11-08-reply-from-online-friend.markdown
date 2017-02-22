@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Frustration
+title: From某贴某版友回复
 categories: [心情感悟]
 tags: [勉励]
 ---
