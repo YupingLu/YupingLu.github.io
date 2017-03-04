@@ -53,8 +53,12 @@ div.header h2 {
   margin: 8px 0px 0px 0px;
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-weight: bold; 
+}
+
+h5 {
+  font-size: 15px;
 }
 
 /* Custom page header */
