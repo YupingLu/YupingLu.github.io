@@ -14260,7 +14260,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="ML-MOGA-User-Manual">ML-MOGA User Manual<a class="anchor-link" href="#ML-MOGA-User-Manual">&#182;</a></h1><p>Languages: Python(3.7.9), C++ <br />
-Tools: PyTorch(1.4.0+), Jupyter Notebook(6.2.0) <br />
+Tools: PyTorch(1.4.0+), Jupyter Notebook(6.2.0) (both can be installed via conda)<br />
 CAM(cam.lbl.gov): Data processing and training <br />
 NERSC: MOGA running(both Tr-MOGA &amp; ML-MOGA)</p>
 <p>If you have any question, contact yupinglu89@gmail.com</p>
@@ -14292,9 +14292,9 @@ NERSC: MOGA running(both Tr-MOGA &amp; ML-MOGA)</p>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="2.-Set-up-MOGA-code">2. Set up MOGA code<a class="anchor-link" href="#2.-Set-up-MOGA-code">&#182;</a></h4><p>Example code(nl-run/run_ori/1_moga). <br />
+<h4 id="2.-Set-up-MOGA-code">2. Set up MOGA code<a class="anchor-link" href="#2.-Set-up-MOGA-code">&#182;</a></h4><p>Example code(NERSC/nl-run/run_ori/1_moga). <br />
 Compile the code in ML_package folder and get the executable by typing "make".<br />
-Submit scanjob.s to schedule the job on NERSC. The time limit on NERSC is 48 hrs for regular queue. You can also submit to 30 minutes debug queue for fast execution.</p>
+Submit scanjob.s listed below to schedule the job on NERSC. The time limit on NERSC is 48 hrs for regular queue. You can also submit to 30 minutes debug queue for fast execution.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -14361,11 +14361,25 @@ Submit scanjob.s to schedule the job on NERSC. The time limit on NERSC is 48 hrs
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sbatch</span> <span class="n">scanjob</span><span class="o">.</span><span class="n">s</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="3.-Retrieve-results-(gen_*_db.dat-files)">3. Retrieve results (gen_*_db.dat files)<a class="anchor-link" href="#3.-Retrieve-results-(gen_*_db.dat-files)">&#182;</a></h4><p>These files are stored in Dir<em>* folder.<br />
-Delete the first line of each gen</em>*_db.dat file.</p>
+<h4 id="3.-Retrieve-results-(gen_*_db.dat-files)">3. Retrieve results (gen_*_db.dat files)<a class="anchor-link" href="#3.-Retrieve-results-(gen_*_db.dat-files)">&#182;</a></h4><p>These files are stored in Dir_* folder.<br />
+Delete the first line of each gen_*_db.dat file.</p>
 
 <pre><code> 20 outputs,   11 variables,   conViol  rank  crowDist
 
