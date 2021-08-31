@@ -14346,7 +14346,7 @@ Submit scanjob.s listed below to schedule the job on NERSC. The time limit on NE
 <span class="c1">#module load pytorch</span>
 <span class="c1">####### Problem mode (0-DASearch, 1-FreqMap, 2-DiffMomen, 3-AreaMomen) ###########</span>
 <span class="c1">#####  1 for read pop, 2 for read gen</span>
-<span class="c1">##### MOGA random seed 0.5</span>
+<span class="c1">##### MOGA random seed currently is 0.5 (original). We changed it to 0.1 for comparison test.</span>
 <span class="n">EXEC</span><span class="o">=</span><span class="s2">&quot;../nsga2r 0.5 3  2&quot;</span>
 
 <span class="n">mpirun</span> <span class="o">-</span><span class="n">v</span> <span class="o">-</span><span class="n">np</span> <span class="err">$</span><span class="n">NCPUS</span> <span class="err">$</span><span class="n">EXEC</span> <span class="o">&lt;../</span><span class="n">tracking</span><span class="o">.</span><span class="ow">in</span> <span class="o">&gt;</span><span class="err">$</span><span class="n">SLURM_SUBMIT_DIR</span><span class="o">/</span><span class="n">stdout_</span><span class="err">$</span><span class="n">JobID</span><span class="o">.</span><span class="n">out</span> <span class="mi">2</span><span class="o">&gt;</span><span class="err">$</span><span class="n">SLURM_SUBMIT_DIR</span><span class="o">/</span><span class="n">stderr_</span><span class="err">$</span><span class="n">JobID</span><span class="o">.</span><span class="n">out</span>
@@ -14441,7 +14441,7 @@ python pre.ma.py</p>
     <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp_df</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c1"># get X and Y</span>
+<span class="c1"># get X and Y, and filter out those not meet the constraints.</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -14513,7 +14513,7 @@ python pre.ma.py</p>
     <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tmp_df</span><span class="p">)</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-<span class="c1"># get X and Y</span>
+<span class="c1"># get X and Y, and filter out those not meet the constraints.</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">3</span><span class="p">]</span>
 <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
@@ -15293,6 +15293,7 @@ python ts.ma.py</p>
 <span class="n">x_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">14.028049</span><span class="p">,</span> <span class="mf">9.7394512</span><span class="p">,</span> <span class="mf">11.783254</span><span class="p">,</span> <span class="mf">15.524115</span><span class="p">,</span> <span class="mf">15.713844</span><span class="p">,</span> <span class="mf">15.480341</span><span class="p">,</span> <span class="o">-</span><span class="mf">14.873348</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.3504979</span><span class="p">,</span> <span class="o">-</span><span class="mf">7.1688257</span><span class="p">,</span> <span class="o">-</span><span class="mf">75.974958</span><span class="p">,</span> <span class="o">-</span><span class="mf">157.57141</span><span class="p">])</span>
 <span class="n">x_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.80621681e-01</span><span class="p">,</span> <span class="mf">5.89510194e-01</span><span class="p">,</span> <span class="mf">9.37556664e-01</span><span class="p">,</span> <span class="mf">2.50345962e-01</span><span class="p">,</span> <span class="mf">2.14431638e-01</span><span class="p">,</span> <span class="mf">3.52844788e-01</span><span class="p">,</span> <span class="mf">3.24311876e-01</span><span class="p">,</span> <span class="mf">1.64542081e-01</span><span class="p">,</span> <span class="mf">2.05577563e-01</span><span class="p">,</span> <span class="mf">2.79143321e+02</span><span class="p">,</span> <span class="mf">3.02909397e+02</span><span class="p">])</span>
 
+<span class="c1"># Here a - k are sample inputs which are required by torch.jit.trace(). You can give that function other inputs.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">12</span>
@@ -15374,6 +15375,7 @@ python ts.ma.py</p>
 <span class="n">x_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">14.028049</span><span class="p">,</span> <span class="mf">9.7394512</span><span class="p">,</span> <span class="mf">11.783254</span><span class="p">,</span> <span class="mf">15.524115</span><span class="p">,</span> <span class="mf">15.713844</span><span class="p">,</span> <span class="mf">15.480341</span><span class="p">,</span> <span class="o">-</span><span class="mf">14.873348</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.3504979</span><span class="p">,</span> <span class="o">-</span><span class="mf">7.1688257</span><span class="p">,</span> <span class="o">-</span><span class="mf">75.974958</span><span class="p">,</span> <span class="o">-</span><span class="mf">157.57141</span><span class="p">])</span>
 <span class="n">x_std</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.80621681e-01</span><span class="p">,</span> <span class="mf">5.89510194e-01</span><span class="p">,</span> <span class="mf">9.37556664e-01</span><span class="p">,</span> <span class="mf">2.50345962e-01</span><span class="p">,</span> <span class="mf">2.14431638e-01</span><span class="p">,</span> <span class="mf">3.52844788e-01</span><span class="p">,</span> <span class="mf">3.24311876e-01</span><span class="p">,</span> <span class="mf">1.64542081e-01</span><span class="p">,</span> <span class="mf">2.05577563e-01</span><span class="p">,</span> <span class="mf">2.79143321e+02</span><span class="p">,</span> <span class="mf">3.02909397e+02</span><span class="p">])</span>
 
+<span class="c1"># Here a - k are sample inputs which are required by torch.jit.trace(). You can give that function other inputs.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">13</span>
 <span class="n">b</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="n">c</span> <span class="o">=</span> <span class="mi">12</span>
@@ -15721,7 +15723,8 @@ python ts.ma.py</p>
 
     <span class="n">constr</span><span class="p">[</span><span class="mi">16</span><span class="p">]</span> <span class="o">=</span> <span class="mi">900</span><span class="o">-</span><span class="n">fabs</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="mi">18</span><span class="p">]);</span>
     <span class="n">constr</span><span class="p">[</span><span class="mi">17</span><span class="p">]</span> <span class="o">=</span> <span class="mi">900</span><span class="o">-</span><span class="n">fabs</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="mi">19</span><span class="p">]);</span>  
-
+    
+    <span class="o">//</span> <span class="n">lattice</span> <span class="n">error</span> <span class="n">random</span> <span class="n">seed</span> <span class="n">currently</span> <span class="ow">is</span> <span class="mi">199</span> <span class="p">(</span><span class="n">original</span><span class="p">)</span><span class="o">.</span> <span class="n">We</span> <span class="n">changed</span> <span class="n">it</span> <span class="n">to</span> <span class="mi">2021</span> <span class="k">for</span> <span class="n">comparison</span> <span class="n">test</span><span class="o">.</span>
     <span class="n">srand</span><span class="p">(</span><span class="mi">199</span><span class="p">);</span>
     <span class="n">SR</span><span class="o">-&gt;</span><span class="n">setQuadSkew</span><span class="p">(</span><span class="mf">5e-4</span><span class="p">);</span>
     <span class="n">SR</span><span class="o">-&gt;</span><span class="n">setQuadGradErr</span><span class="p">(</span><span class="mf">2e-4</span><span class="p">);</span>
@@ -15868,6 +15871,7 @@ python ts.ma.py</p>
    <span class="n">dist</span> <span class="o">/=</span> <span class="p">(</span><span class="mi">5000</span><span class="o">*</span><span class="mi">4999</span><span class="p">)</span>
    <span class="k">return</span> <span class="n">dist</span>
 
+<span class="c1"># x1 is the number of generation files. The example output below is just for demonstration. It&#39;s not the actual output.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">x1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1376</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 
@@ -15939,6 +15943,7 @@ python ts.ma.py</p>
     <span class="n">delta</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">delta</span><span class="p">)</span> <span class="o">/</span> <span class="mi">5000</span>
     <span class="k">return</span> <span class="n">delta</span>
 
+<span class="c1"># x1 is the number of generation files. The example output below is just for demonstration. It&#39;s not the actual output.</span>
 <span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="n">x1</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1377</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
 
