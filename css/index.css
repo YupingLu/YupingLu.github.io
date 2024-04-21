@@ -1,7 +1,7 @@
 body {
   font-family: 'Lato', Arial, sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   padding-top: 5px;
   padding-bottom: 10px; 
 }
@@ -96,4 +96,8 @@ h5 {
 
 .footer a:link, .footer a:visited {
   color: #777; 
+}
+
+#moto {
+  font-size: 16px;
 }
