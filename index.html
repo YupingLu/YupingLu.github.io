@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="/css/latofonts.css" rel="stylesheet" type="text/css">
     <link href="/css/latolatinfonts.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -28,6 +27,60 @@
             loadcss("css/index.css");
         }
     </script>
+    <style>
+        /* Replacement for Bootstrap styles */
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857143;
+            color: #333;
+            background-color: #fff;
+            margin: 0;
+        }
+        a { color: #337ab7; text-decoration: none; }
+        a:hover, a:focus { color: #23527c; text-decoration: underline; }
+        a.black { color: #333; }
+        
+        h2, h3, h4 { font-family: inherit; font-weight: 500; line-height: 1.1; color: inherit; }
+        h2 { font-size: 30px; margin-top: 20px; margin-bottom: 10px; }
+        h3 { font-size: 24px; margin-top: 20px; margin-bottom: 10px; }
+        h4 { font-size: 18px; margin-top: 10px; margin-bottom: 10px; }
+        p { margin: 0 0 10px; }
+        ul { margin-top: 0; margin-bottom: 10px; }
+        
+        .container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+        @media (min-width: 768px) { .container { width: 750px; } }
+        @media (min-width: 992px) { .container { width: 970px; } }
+        @media (min-width: 1200px) { .container { width: 1170px; } }
+        
+        .header { padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; margin-bottom: 30px; margin-top: 20px; }
+        .header h2 { margin-top: 0; line-height: 40px; }
+        .pull-right { float: right !important; }
+        
+        .nav { padding-left: 0; margin-bottom: 0; list-style: none; display: flex; flex-wrap: wrap; margin-top: 0; }
+        .nav-item { margin-left: 5px; }
+        .nav-link { position: relative; display: block; padding: 10px 15px; border-radius: 4px; }
+        .nav-link:hover { background-color: #eee; text-decoration: none; }
+        .nav-link.active { color: #fff; background-color: #337ab7; }
+        .nav-link.active:hover { background-color: #286090; color: #fff; }
+        
+        .row { display: flex; flex-wrap: wrap; margin-right: -15px; margin-left: -15px; }
+        .col-sm-8, .col-md-8, .col-sm-4, .col-md-4 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; width: 100%; }
+        @media (min-width: 768px) {
+            .col-sm-8, .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+            .col-sm-4, .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+        }
+        
+        .img-thumbnail {
+            display: inline-block; max-width: 100%; height: auto; padding: 4px;
+            line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; border-radius: 4px;
+        }
+        .text-justify { text-align: justify; }
+        .footer { padding-top: 19px; color: #777; border-top: 1px solid #e5e5e5; margin-top: 40px; margin-bottom: 20px; }
+    </style>
 </head>
 
 <body>
@@ -589,10 +642,6 @@
                 updated: 2026-03-22</p>
         </div>
     </div>
-
-    <!-- load javascript last -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
