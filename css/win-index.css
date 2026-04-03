@@ -77,8 +77,21 @@ h5 {
   color: white;
 }
 
-.header .nav li.nav-item .fa {
-  font-size: 20px; 
+.header .nav li.nav-item i,
+.header .nav .nav-link i,
+.nav .nav-item i,
+.nav .nav-link i,
+.contact i,
+.contact p a i,
+.contact a i,
+.contact .fa-solid,
+.contact .fa-regular,
+.contact .fa-brands {
+  font-size: 22px !important;
+}
+
+.contact {
+  margin-bottom: 16px;
 }
 
 /* Custom page footer */

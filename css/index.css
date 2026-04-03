@@ -19,46 +19,59 @@ img {
 }
 
 a {
-  color: #3c53a6; 
+  color: #3c53a6;
+  text-decoration: none;
 }
 
 a.black {
-  color: black; 
+  color: black;
+  text-decoration: none;
 }
 
 a.black:hover {
-  color: black; 
+  color: black;
 }
 
 a:hover {
   color: #27356a;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 a.pub-title {
-  color: black; 
+  color: black;
+  text-decoration: none;
 }
 
 a.pub-title:hover {
-  color: black; 
+  color: black;
 }
 
 div.header {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 div.header h2 {
   font-size: 32px;
-  font-weight: normal; 
+  font-weight: 600;
   margin: 8px 0px 0px 0px;
 }
 
-h2, h3, h4 {
-  font-weight: bold; 
+h2, h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 h5 {
   font-size: 15px;
+}
+
+strong {
+  font-weight: 700;
 }
 
 /* Custom page header */
@@ -69,7 +82,14 @@ h5 {
 }
 
 .header .nav.nav-pills .nav-link {
-  padding: 6px; 
+  padding: 6px;
+  font-size: 16px;
+  color: #3c53a6;
+}
+
+.header .nav.nav-pills .nav-link:hover,
+.header .nav.nav-pills .nav-link:focus {
+  color: #2a4a8f;
 }
 
 .header .nav.nav-pills .nav-link.active {
@@ -77,8 +97,34 @@ h5 {
   color: white;
 }
 
-.header .nav li.nav-item .fa {
-  font-size: 20px; 
+.header .nav li.nav-item .fa,
+.header .nav .nav-link .fa,
+.nav .nav-item .fa,
+.nav .nav-link .fa,
+.header .nav .fa,
+.header .nav i,
+.contact i,
+.contact .fa {
+  font-size: 22px !important;
+  color: #3c53a6 !important;
+  line-height: 1;
+}
+
+.header .nav li.nav-item i,
+.header .nav .nav-link i,
+.nav .nav-item i,
+.nav .nav-link i,
+.contact i,
+.contact p a i,
+.contact a i,
+.contact .fa-solid,
+.contact .fa-regular,
+.contact .fa-brands {
+  font-size: 22px !important;
+}
+
+.contact {
+  margin-bottom: 16px;
 }
 
 /* Custom page footer */
